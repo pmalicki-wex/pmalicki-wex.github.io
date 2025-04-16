@@ -38,23 +38,25 @@
 <p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
 <footer>&copy; 2023 Your Name</footer>
 
-<!-- WEX BLUELIGHT CHAT -->
+<!-- ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
 
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-      "deploymentServiceType": "WEX Bluelight"
+      "deploymentServiceType": "ESSO Website",
+      "language": "en",
+      "country": "GB"
     });
   });
 
   function initEmbeddedMessaging() {
     try {
-      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+      embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
       embeddedservice_bootstrap.init(
               '00Dds000000lyaE',
-              'WES_Chat',
-              'https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631',
+              'ESSO_Website',
+              'https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774',
               {
                 scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
               }
@@ -64,8 +66,8 @@
     }
   };
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-<!-- WEX BLUELIGHT CHAT -->
+<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<!-- ESSO WEBSITE CHAT -->
 
 </body>
 </html>
