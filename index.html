@@ -49,24 +49,25 @@
     });
   });
 
-  function initEmbeddedMessaging() {
+    function initEmbeddedMessaging() {
     try {
-      embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+    embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
-      embeddedservice_bootstrap.init(
-              '00Dds000000lyaE',
-              'WES_Chat',
-              'https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631',
-              {
-                scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
-              }
-      );
-    } catch (err) {
-      console.error('Error loading Embedded Messaging: ', err);
-    }
+    embeddedservice_bootstrap.init(
+    '00DUC000003OQNp',
+    'WES_Chat',
+    'https://eg-group--preprod.sandbox.my.site.com/ESWWESChat1740997370631',
+  {
+    scrt2URL: 'https://eg-group--preprod.sandbox.my.salesforce-scrt.com'
+  }
+    );
+  } catch (err) {
+    console.error('Error loading Embedded Messaging: ', err);
+  }
   };
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+<script type='text/javascript' src='https://eg-group--preprod.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- WEX BLUELIGHT CHAT -->
 
 </body>
