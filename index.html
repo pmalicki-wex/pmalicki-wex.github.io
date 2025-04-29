@@ -43,7 +43,7 @@
 
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-      "deploymentServiceType": "ESSO Website",
+      "deploymentServiceType": "WEX Bluelight",
       "language": "en",
       "country": "GB"
     });
@@ -51,12 +51,12 @@
 
   function initEmbeddedMessaging() {
     try {
-      embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
       embeddedservice_bootstrap.init(
               '00Dds000000lyaE',
-              'ESSO_Website',
-              'https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774',
+              'WES_Chat',
+              'https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631',
               {
                 scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
               }
@@ -66,8 +66,8 @@
     }
   };
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-<!-- ESSO WEBSITE CHAT -->
+<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 </body>
 </html>
