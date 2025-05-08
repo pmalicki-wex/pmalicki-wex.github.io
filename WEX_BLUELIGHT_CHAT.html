@@ -51,14 +51,14 @@
 
   function initEmbeddedMessaging() {
     try {
-      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+      embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
       embeddedservice_bootstrap.init(
-              '00Dds000000lyaE',
+              '00D1r000002BYGg',
               'WES_Chat',
-              'https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631',
+              'https://eg-group.my.site.com/ESWWESChat1740997370631',
               {
-                scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
+                scrt2URL: 'https://eg-group.my.salesforce-scrt.com'
               }
       );
     } catch (err) {
@@ -66,7 +66,7 @@
     }
   };
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://eg-group.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- WEX BLUELIGHT CHAT -->
 
 </body>
