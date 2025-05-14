@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 600px;
+        }
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<header>Welcome to My Simple Webpage</header>
+<p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
+<footer>&copy; 2023 Your Name</footer>
+
+<!-- UK ESSO WEBSITE CHAT -->
+<script type='text/javascript'>
+
+    window.addEventListener("onEmbeddedMessagingReady", () => {
+        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+            "deploymentServiceType": "ESSO Website",
+            "language": "en",
+            "country": "GB"
+        });
+    });
+
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00Dds000000lyaE',
+                'UK_ESSO_Website',
+                'https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
+                {
+                    scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<!-- UK ESSO WEBSITE CHAT -->
+
+</body>
+</html>
