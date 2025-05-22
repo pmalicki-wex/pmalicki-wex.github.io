@@ -46,8 +46,6 @@
       "deploymentServiceType": "WEX Bluelight",
       "language": "en",
       "country": "GB"
-    }).then(() => {
-      embeddedservice_bootstrap.utilAPI.launchChat();
     });
   });
 
@@ -70,6 +68,22 @@
 </script>
 <script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- ESSO WEBSITE CHAT -->
+// Create a custom button or invitation to launch the web chat client.
+<button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
+
+// Call Launch Chat API.
+<script>
+  function launchChat() {
+    embeddedservice_bootstrap.utilAPI.launchChat()
+        .then(() => {
+          console.log('Launch Chat');
+        }).catch((e) => {
+        console.log('Launch Error: ', e);
+      }).finally(() => {
+        console.log('Finally');
+      });
+  }
+</script>
 
 </body>
 </html>
