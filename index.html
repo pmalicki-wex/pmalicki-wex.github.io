@@ -46,9 +46,9 @@
       "deploymentServiceType": "WEX Bluelight",
       "language": "en",
       "country": "GB"
+    }).then(() => {
+      embeddedservice_bootstrap.utilAPI.launchChat();
     });
-
-    embeddedservice_bootstrap.utilAPI.launchChat();
   });
 
   function initEmbeddedMessaging() {
