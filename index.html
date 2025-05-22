@@ -35,6 +35,7 @@
 </head>
 <body>
 <header>WEX Blue Light Card - Test Chat (UAT)</header>
+<button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
 <p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
 <footer>&copy; 2023 Your Name</footer>
 
@@ -46,7 +47,7 @@
       "deploymentServiceType": "WEX Bluelight",
       "language": "en",
       "country": "GB"
-    });
+    }).then(() => console.log("EMBEDDED MESSAGE"));
   });
 
   function initEmbeddedMessaging() {
@@ -68,7 +69,6 @@
 </script>
 <script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- ESSO WEBSITE CHAT -->
-<button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
 
 <script>
   function launchChat() {
