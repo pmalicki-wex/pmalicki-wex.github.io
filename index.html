@@ -43,11 +43,15 @@
 <script type='text/javascript'>
 
   window.addEventListener("onEmbeddedMessagingReady", () => {
+    console.log("onEmbeddedMessagingReady");
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
       "deploymentServiceType": "WEX Bluelight",
       "language": "en",
       "country": "GB"
-    }).then(() => console.log("EMBEDDED MESSAGE"));
+    }).then(() => {
+      console.log("EMBEDDED MESSAGE");
+    });
+    console.log("FINISH : onEmbeddedMessagingReady");
   });
 
   function initEmbeddedMessaging() {
