@@ -51,7 +51,11 @@
 
   window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
     if (!isFirstTime) {
-      embeddedservice_bootstrap.utilAPI.launchChat();
+      // Check if 'openChat' URL parameter exists
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('openChat')) {
+        embeddedservice_bootstrap.utilAPI.launchChat();
+      }
       isFirstTime = true;
     }
   });
