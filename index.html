@@ -40,7 +40,7 @@
 
 <!-- UK ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
-
+  let isFirstTime = false;
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
       "deploymentServiceType": "ESSO Website",
@@ -48,14 +48,14 @@
       "country": "GB"
     });
   });
+
   window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
-    embeddedservice_bootstrap.utilAPI.launchChat().then(() => {
-      console.log("Chat launched");
-    }).catch((err) => {
-      console.error("Error launching chat: ", err);
-    });
+    if (!isFirstTime) {
+      embeddedservice_bootstrap.utilAPI.launchChat();
+      isFirstTime = true;
+    }
   });
-  
+
 
   function initEmbeddedMessaging() {
     try {
