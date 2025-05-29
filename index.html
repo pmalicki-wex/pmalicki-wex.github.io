@@ -34,23 +34,19 @@
   </style>
 </head>
 <body>
-<header>WEX Blue Light Card - Test Chat (UAT)</header>
-<button id="launchChatButton" onclick="launchChat()">Click to contact support</button>
+<header>Welcome to My Simple Webpage</header>
 <p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
 <footer>&copy; 2023 Your Name</footer>
 
-<!-- ESSO WEBSITE CHAT -->
+<!-- UK ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
 
   window.addEventListener("onEmbeddedMessagingReady", () => {
-    console.log("onEmbeddedMessagingReady");
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-      "deploymentServiceType": "WEX Bluelight",
+      "deploymentServiceType": "ESSO Website",
       "language": "en",
       "country": "GB"
     });
-    console.log("FINISH : onEmbeddedMessagingReady");
-    launchChat();
   });
 
   function initEmbeddedMessaging() {
@@ -59,8 +55,8 @@
 
       embeddedservice_bootstrap.init(
               '00Dds000000lyaE',
-              'WES_Chat',
-              'https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631',
+              'UK_ESSO_Website',
+              'https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
               {
                 scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
               }
@@ -70,21 +66,8 @@
     }
   };
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-<!-- ESSO WEBSITE CHAT -->
-
-<script>
-  function launchChat() {
-    embeddedservice_bootstrap.utilAPI.launchChat()
-        .then(() => {
-          console.log('Launch Chat');
-        }).catch((e) => {
-        console.log('Launch Error: ', e);
-      }).finally(() => {
-        console.log('Finally');
-      });
-  }
-</script>
+<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<!-- UK ESSO WEBSITE CHAT -->
 
 </body>
 </html>
