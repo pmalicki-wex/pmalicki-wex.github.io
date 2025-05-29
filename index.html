@@ -48,6 +48,14 @@
       "country": "GB"
     });
   });
+  window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
+    embeddedservice_bootstrap.utilAPI.launchChat().then(() => {
+      console.log("Chat launched");
+    }).catch((err) => {
+      console.error("Error launching chat: ", err);
+    });
+  });
+  
 
   function initEmbeddedMessaging() {
     try {
