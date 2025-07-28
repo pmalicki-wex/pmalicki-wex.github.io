@@ -43,11 +43,11 @@
   let isFirstTime = false;
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-      "deploymentServiceType": "WEX Bluelight",
-      "language": "en",
-      "country": "GB"
+        "deploymentServiceType": "ESSO Website",
+        "language": "en",
+        "country": "GB"
     });
-  });
+});
 
   window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
     if (!isFirstTime) {
@@ -62,12 +62,12 @@
 
   function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00Dds000001sGTp',
-				'WES_Chat',
-				'https://eg-group--piotr.sandbox.my.site.com/ESWWESChat1740997370631',
+				'UK_ESSO_Website',
+				'https://eg-group--piotr.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
 				{
 					scrt2URL: 'https://eg-group--piotr.sandbox.my.salesforce-scrt.com'
 				}
@@ -77,7 +77,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://eg-group--piotr.sandbox.my.site.com/ESWWESChat1740997370631/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://eg-group--piotr.sandbox.my.site.com/ESWUKESSOWebsite1747053091412/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- UK ESSO WEBSITE CHAT -->
 
 </body>
