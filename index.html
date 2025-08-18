@@ -44,8 +44,8 @@
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
         "deploymentServiceType": "ESSO Website",
-        "language": "nl",
-        "country": "NL"
+        "language": "en",
+        "country": "GB"
     });
 });
 
@@ -62,7 +62,7 @@
 
   function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'nl_NL'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00Dds000001sGTp',
