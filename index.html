@@ -38,15 +38,36 @@
 <p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
 <footer>&copy; 2023 Your Name</footer>
 
+<!-- UK ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
-	function initEmbeddedMessaging() {
+  let isFirstTime = false;
+  window.addEventListener("onEmbeddedMessagingReady", () => {
+    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+        "deploymentServiceType": "ESSO Website",
+        "language": "nl",
+        "country": "NL"
+    });
+});
+
+  window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
+    if (!isFirstTime) {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('openChat')) {
+        embeddedservice_bootstrap.utilAPI.launchChat();
+      }
+      isFirstTime = true;
+    }
+  });
+
+
+  function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'nl_NL'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
 				'00Dds000001sGTp',
-				'hhhtest',
-				'https://eg-group--piotr.sandbox.my.site.com/ESWhhhtest1755524529886',
+				'ESSO_Website',
+				'https://eg-group--piotr.sandbox.my.site.com/ESWESSOWebsite1742988561774',
 				{
 					scrt2URL: 'https://eg-group--piotr.sandbox.my.salesforce-scrt.com'
 				}
@@ -56,7 +77,8 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://eg-group--piotr.sandbox.my.site.com/ESWhhhtest1755524529886/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://eg-group--piotr.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<!-- UK ESSO WEBSITE CHAT -->
 
 </body>
 </html>
