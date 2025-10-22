@@ -38,34 +38,22 @@
 <p>This is a clean and minimal webpage designed to be simple and easy to read. Feel free to customize it as you like!</p>
 <footer>&copy; 2023 Your Name</footer>
 
-<!-- UK ESSO WEBSITE CHAT -->
+<!-- ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
-  let isFirstTime = false;
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-        "deploymentServiceType": "ESSO Website",
-        "language": "de",
-        "country": "DE"
+      "deploymentServiceType": "ESSO Website",
+      "language": "de",
+      "country": "DE"
     });
-});
-
-  window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
-    if (!isFirstTime) {
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.has('openChat')) {
-        embeddedservice_bootstrap.utilAPI.launchChat();
-      }
-      isFirstTime = true;
-    }
   });
 
-
-  function initEmbeddedMessaging() {
+	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'de'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
-				'00Dds000001sGTp',
+				'00Dds000002N5FZ',
 				'ESSO_Website',
 				'https://eg-group--piotr.sandbox.my.site.com/ESWESSOWebsite1742988561774',
 				{
@@ -78,7 +66,7 @@
 	};
 </script>
 <script type='text/javascript' src='https://eg-group--piotr.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-<!-- UK ESSO WEBSITE CHAT -->
+<!-- ESSO WEBSITE CHAT -->
 
 </body>
 </html>
