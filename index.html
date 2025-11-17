@@ -40,64 +40,61 @@
 
 <!-- ESSO WEBSITE CHAT -->
 <!-- <script type='text/javascript'>
-
-    window.addEventListener("onEmbeddedMessagingReady", () => {
-      embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-        "deploymentServiceType": "ESSO Website",
-        "language": "fr",
-        "country": "BE"
-      });
+  window.addEventListener("onEmbeddedMessagingReady", () => {
+    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+      "deploymentServiceType": "ESSO Website",
+      "language": "fr",
+      "country": "BE"
     });
-  
-    function initEmbeddedMessaging() {
-        try {
-            embeddedservice_bootstrap.settings.language = 'fr'; // For example, enter 'en' or 'en-US'
-  
-            embeddedservice_bootstrap.init(
-                '00DUC000004QesL',
-                'ESSO_Website',
-                'https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774',
-                {
-                    scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
-                }
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
+  });
+
+  function initEmbeddedMessaging() {
+    try {
+      embeddedservice_bootstrap.settings.language = 'fr'; // For example, enter 'en' or 'en-US'
+
+      embeddedservice_bootstrap.init(
+        '00DUD000007Olhi',
+        'ESSO_Website',
+        'https://eg-group--piotrmiaw.sandbox.my.site.com/ESWESSOWebsite1742988561774',
+        {
+          scrt2URL: 'https://eg-group--piotrmiaw.sandbox.my.salesforce-scrt.com'
         }
-    };
-  </script>
-  <script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script> -->
+      );
+    } catch (err) {
+      console.error('Error loading Embedded Messaging: ', err);
+    }
+  };
+</script>
+<script type='text/javascript' src='https://eg-group--piotrmiaw.sandbox.my.site.com/ESWESSOWebsite1742988561774/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script> -->
 <!-- ESSO WEBSITE CHAT -->
 
 <!-- UK ESSO WEBSITE CHAT -->
 <script type='text/javascript'>
-
-    window.addEventListener("onEmbeddedMessagingReady", () => {
-        embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-            "deploymentServiceType": "ESSO Website",
-            "language": "en",
-            "country": "GB"
-        });
+  window.addEventListener("onEmbeddedMessagingReady", () => {
+    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
+        "deploymentServiceType": "ESSO Website",
+        "language": "en",
+        "country": "GB"
     });
+  });
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
 
-    function initEmbeddedMessaging() {
-        try {
-            embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
-
-            embeddedservice_bootstrap.init(
-                '00DUC000004QesL',
-                'UK_ESSO_Website',
-                'https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
-                {
-                    scrt2URL: 'https://eg-group--uat.sandbox.my.salesforce-scrt.com'
-                }
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
-        }
-    };
+			embeddedservice_bootstrap.init(
+				'00DUD000007Olhi',
+				'UK_ESSO_Website',
+				'https://eg-group--piotrmiaw.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
+				{
+					scrt2URL: 'https://eg-group--piotrmiaw.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
 </script>
-<script type='text/javascript' src='https://eg-group--uat.sandbox.my.site.com/ESWUKESSOWebsite1747053091412/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://eg-group--piotrmiaw.sandbox.my.site.com/ESWUKESSOWebsite1747053091412/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 <!-- UK ESSO WEBSITE CHAT -->
 </body>
 </html>
