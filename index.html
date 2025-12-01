@@ -73,17 +73,17 @@
   window.addEventListener("onEmbeddedMessagingReady", () => {
     embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
         "deploymentServiceType": "ESSO Website",
-        "language": "en",
-        "country": "GB"
+        "language": "de",
+        "country": "DE"
     });
   });
 	function initEmbeddedMessaging() {
 		try {
-			embeddedservice_bootstrap.settings.language = 'en'; // For example, enter 'en' or 'en-US'
+			embeddedservice_bootstrap.settings.language = 'de'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
-				'00DUD000007Olhi',
-				'UK_ESSO_Website',
+				'00DUD000007c8i5',
+				'ESSO_Website',
 				'https://eg-group--piotrmiaw.sandbox.my.site.com/ESWUKESSOWebsite1747053091412',
 				{
 					scrt2URL: 'https://eg-group--piotrmiaw.sandbox.my.salesforce-scrt.com'
